@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Book a train ticket · Task 1</title>
+  <link rel="stylesheet" href="assets/vendor/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/common.css">
+  <link rel="stylesheet" href="assets/task1.css">
+</head>
+<body>
+  <main class="container-fluid train-page">
+    <article class="ticket-card">
+      <header class="ticket-header"><h1>Book a train ticket</h1></header>
+      <form action="completed.html" method="post" class="ticket-form">
+        <fieldset class="trip-choice">
+          <legend class="visually-hidden">Journey type (required)</legend>
+          <div class="btn-group" role="group" aria-label="Journey type">
+            <input class="btn-check" type="radio" name="journey" id="one-way" value="one-way" required>
+            <label class="btn trip-button" for="one-way">One way</label>
+            <input class="btn-check" type="radio" name="journey" id="round-trip" value="round-trip" required>
+            <label class="btn trip-button" for="round-trip">Round trip</label>
+          </div>
+        </fieldset>
+
+        <div class="row g-3 g-md-4 route-row">
+          <div class="col-12 col-md-6">
+            <div class="route-field">
+              <label for="from" class="form-label">From<span class="visually-hidden"> (required)</span></label>
+              <input class="form-control" type="text" name="from" id="from" placeholder="Astana" required>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="route-field">
+              <label for="to" class="form-label">To<span class="visually-hidden"> (required)</span></label>
+              <input class="form-control" type="text" name="to" id="to" placeholder="Almaty" required>
+            </div>
+          </div>
+        </div>
+
+        <div class="row g-3 g-md-4 details-row">
+          <div class="col-12 col-md-4">
+            <label for="departure" class="form-label">Departure<span class="visually-hidden"> (required)</span></label>
+            <input class="form-control" type="date" name="departure" id="departure" required>
+          </div>
+          <div class="col-12 col-md-4">
+            <label for="return" class="form-label">Return<span class="visually-hidden"> (optional)</span></label>
+            <input class="form-control" type="date" name="return" id="return">
+          </div>
+          <div class="col-12 col-md-4">
+            <label for="passengers" class="form-label">Passengers<span class="visually-hidden"> (required)</span></label>
+            <select class="form-select" name="passengers" id="passengers" required>
+              <option value="">Choose adults</option>
+              <option value="1">1 adult</option>
+              <option value="2">2 adults</option>
+              <option value="3">3 adults</option>
+              <option value="4">4 adults</option>
+              <option value="5">5 adults</option>
+              <option value="6">6 adults</option>
+            </select>
+          </div>
+        </div>
+
+        <fieldset class="carriage-row">
+          <legend class="form-label">Carriage class<span class="visually-hidden"> (required)</span></legend>
+          <div class="d-flex flex-wrap carriage-options">
+            <div class="form-check"><input class="form-check-input" type="radio" name="carriage" id="seat" value="seat" required><label class="form-check-label" for="seat">Seat</label></div>
+            <div class="form-check"><input class="form-check-input" type="radio" name="carriage" id="coupe" value="coupe" required><label class="form-check-label" for="coupe">Coupé</label></div>
+            <div class="form-check"><input class="form-check-input" type="radio" name="carriage" id="sleeper" value="sleeper" required><label class="form-check-label" for="sleeper">Sleeper</label></div>
+          </div>
+        </fieldset>
+
+        <div class="row g-3 g-md-4 contacts-row">
+          <div class="col-12 col-md-6">
+            <label for="phone" class="form-label">Phone<span class="visually-hidden"> (required)</span></label>
+            <div class="input-group">
+              <span class="input-group-text" id="phone-prefix">+7</span>
+              <input class="form-control" type="tel" name="phone" id="phone" aria-describedby="phone-prefix" placeholder="701 234 56 78" required>
+              <input type="hidden" name="phone_country_code" value="+7">
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <label for="email" class="form-label">Email<span class="visually-hidden"> (required)</span></label>
+            <input class="form-control" type="email" name="email" id="email" autocomplete="email" placeholder="name@example.com" required>
+          </div>
+        </div>
+
+        <div class="preferences">
+          <div class="form-check form-switch"><input class="form-check-input" type="checkbox" role="switch" name="sms" id="sms" value="yes"><label class="form-check-label" for="sms">Also send the ticket by SMS</label></div>
+          <div class="form-check"><input class="form-check-input" type="checkbox" name="agreement" id="train-agreement" value="accepted" required><label class="form-check-label" for="train-agreement">I agree with the carriage rules<span class="visually-hidden"> (required)</span></label></div>
+        </div>
+
+        <!-- The DOM order stays Clear, Find trains; flex reverses it on phones. -->
+        <div class="form-actions d-flex flex-column-reverse flex-md-row justify-content-md-end">
+          <button class="btn clear-button" type="reset">Clear</button>
+          <button class="btn find-button" type="submit">Find trains</button>
+        </div>
+      </form>
+    </article>
+    <nav class="assignment-nav" aria-label="Assignments"><a href="index.html">All assignments</a><a href="task2.html">Next: AITU Hack →</a></nav>
+  </main>
+</body>
+</html>

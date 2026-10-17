@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="An accessible café reservation form, rebuilt with semantic HTML and native validation.">
+  <title>Reserve a Table — Assignment 4</title>
+  <link rel="stylesheet" href="assets/vendor/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/common.css">
+  <link rel="stylesheet" href="assets/task3.css">
+</head>
+<body class="cafe-page">
+  <a class="cafe-skip" href="#main">Skip to reservation</a>
+  <header class="cafe-header">
+    <div class="container cafe-header-inner">
+      <a class="cafe-brand" href="index.html" aria-label="Assignment 4 home"><span class="cafe-brand-mark" aria-hidden="true">a4</span> WEB STUDIO</a>
+      <nav aria-label="Assignments">
+        <ul class="cafe-nav">
+          <li><a href="task1.html">Task 01</a></li>
+          <li><a href="task2.html">Task 02</a></li>
+          <li><a href="task3.html" aria-current="page">Task 03 <span class="cafe-nav-dot" aria-hidden="true"></span></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container cafe-main">
+    <div class="cafe-page-caption"><span>03 / ACCESSIBLE FORMS</span><span>HTML &amp; BOOTSTRAP</span></div>
+    <div class="cafe-layout">
+      <section class="cafe-story" aria-labelledby="cafe-title">
+        <div class="cafe-wordmark"><span aria-hidden="true">✳</span> THE LITTLE TABLE</div>
+        <p class="cafe-eyebrow">GOOD FOOD. BETTER COMPANY.</p>
+        <h1 id="cafe-title">Make room<br>for a little<br><span>good company.</span></h1>
+        <p class="cafe-intro">A long lunch. An unhurried dinner. A seat on the terrace. There’s a table with your name on it.</p>
+
+        <div class="cafe-table-art" aria-hidden="true">
+          <svg viewBox="0 0 410 240" xmlns="http://www.w3.org/2000/svg" focusable="false">
+            <ellipse cx="205" cy="213" rx="169" ry="16" fill="#dfdfcb"/>
+            <path d="M58 203c11-24 16-64 22-85h244c8 26 11 59 25 85" fill="#eddfba"/>
+            <path d="m96 120-11 80m46-80-5 81m45-81-2 82m43-82 2 83m43-83 6 82m42-82 11 81" stroke="#ddc796" stroke-width="2"/>
+            <ellipse cx="202" cy="120" rx="132" ry="45" fill="#f8f2e1" stroke="#c9b68c" stroke-width="2"/>
+            <ellipse cx="174" cy="126" rx="47" ry="16" fill="#fffdf7" stroke="#d2d8c2" stroke-width="2"/>
+            <ellipse cx="174" cy="125" rx="33" ry="10" fill="none" stroke="#c4d0ad" stroke-width="1.5"/>
+            <path d="M113 114v29m-6-29v10q6 5 12 0v-10m-6 9v-9m119 0v29m-1-29q-10 14 1 17" fill="none" stroke="#63806b" stroke-linecap="round" stroke-width="2.5"/>
+            <ellipse cx="282" cy="109" rx="19" ry="6" fill="#d5ddc6"/>
+            <path d="M265 83h28l-3 23q-11 8-22 0z" fill="#6c8065"/>
+            <path d="M294 88c15-1 13 13-3 12" fill="none" stroke="#6c8065" stroke-width="4"/>
+            <ellipse cx="279" cy="83" rx="14" ry="4" fill="#aebc95"/>
+            <path d="M279 72q-7-6 0-13m7 12q-6-6 0-13" fill="none" stroke="#afbd9b" stroke-linecap="round" stroke-width="2"/>
+            <ellipse cx="212" cy="96" rx="13" ry="5" fill="#d5ddc6"/>
+            <path d="m205 70-3 22q10 7 20 0l-3-22" fill="#b9c59e" stroke="#6c8065" stroke-width="1.5"/>
+            <path d="M212 73V34m0 21-15-12m15 1 13-13" fill="none" stroke="#4d7153" stroke-linecap="round" stroke-width="2"/>
+            <path d="M197 44q-16-3-14-14 15 0 14 14m28-12q0-15 12-16 3 14-12 16m-13 3q-13-9-6-20 14 6 6 20" fill="#70885d"/>
+            <circle cx="156" cy="53" r="3" fill="#c8a45c"/>
+            <path d="M308 43v12m-6-6h12m-211-3v10m-5-5h10" stroke="#b9bf99" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="cafe-story-bottom"><span class="cafe-leaf" aria-hidden="true">↗</span><p>A simple ritual.<br><strong>A lovely place to gather.</strong></p></div>
+      </section>
+
+      <section class="cafe-form-card" aria-labelledby="reservation-title">
+        <div class="cafe-form-top"><span class="cafe-eyebrow">SAVE YOUR SEAT</span><span class="cafe-small-flower" aria-hidden="true">✳</span></div>
+        <h2 id="reservation-title">Reserve a table</h2>
+        <p class="cafe-form-intro">Tell us a little about your visit.</p>
+        <p class="cafe-required-note">Fields marked <span aria-hidden="true">*</span> are required.</p>
+
+        <form method="post" action="completed.html" class="cafe-form">
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <label class="form-label" for="full-name">Your name <span aria-hidden="true">*</span></label>
+              <input class="form-control" type="text" id="full-name" name="full_name" autocomplete="name" placeholder="Alex Morgan" required>
+            </div>
+            <div class="col-sm-6">
+              <label class="form-label" for="email">Email <span aria-hidden="true">*</span></label>
+              <input class="form-control" type="email" id="email" name="email" autocomplete="email" placeholder="alex@example.com" required>
+            </div>
+            <div class="col-sm-6">
+              <label class="form-label" for="phone">Phone <span class="cafe-optional">(optional)</span></label>
+              <input class="form-control" type="tel" id="phone" name="phone" autocomplete="tel" placeholder="Your contact number">
+            </div>
+            <div class="col-sm-6">
+              <label class="form-label" for="guests">Guests <span aria-hidden="true">*</span></label>
+              <input class="form-control" type="number" id="guests" name="guests" min="1" step="1" placeholder="2" aria-describedby="guests-hint" required>
+              <div class="form-text" id="guests-hint">At least 1 guest.</div>
+            </div>
+            <div class="col-sm-6">
+              <label class="form-label" for="date">Date <span aria-hidden="true">*</span></label>
+              <input class="form-control" type="date" id="date" name="date" required>
+            </div>
+            <div class="col-sm-6">
+              <label class="form-label" for="meal">Meal <span aria-hidden="true">*</span></label>
+              <select class="form-select" id="meal" name="meal" required>
+                <option value="" selected disabled>Select a meal</option>
+                <option value="lunch">Lunch</option>
+                <option value="dinner">Dinner</option>
+              </select>
+            </div>
+          </div>
+
+          <fieldset class="cafe-seating">
+            <legend>Seating <span aria-hidden="true">*</span></legend>
+            <div class="cafe-seat-options">
+              <label class="cafe-seat-option" for="seating-inside">
+                <input class="form-check-input" type="radio" id="seating-inside" name="seating" value="inside" required>
+                <span>Inside<small>Cosy &amp; comfortable</small></span>
+              </label>
+              <label class="cafe-seat-option" for="seating-terrace">
+                <input class="form-check-input" type="radio" id="seating-terrace" name="seating" value="terrace" required>
+                <span>Terrace<small>A little fresh air</small></span>
+              </label>
+            </div>
+          </fieldset>
+
+          <div class="cafe-comments">
+            <label class="form-label" for="comments">Comments <span class="cafe-optional">(optional)</span></label>
+            <textarea class="form-control" id="comments" name="comments" rows="3" placeholder="A special occasion or anything we should know?"></textarea>
+          </div>
+
+          <div class="form-check cafe-terms">
+            <input class="form-check-input" type="checkbox" id="terms" name="terms" value="accepted" required>
+            <label class="form-check-label" for="terms">I agree to the terms <span aria-hidden="true">*</span></label>
+          </div>
+          <details class="cafe-terms-details">
+            <summary>Read the demo terms</summary>
+            <p>This is a demonstration. Submitting this form shows a confirmation page and does not create a real café booking.</p>
+          </details>
+          <button class="btn cafe-submit" type="submit">Reserve <span aria-hidden="true">↗</span></button>
+          <p class="cafe-demo-note">Demo reservation · No real booking is made.</p>
+        </form>
+      </section>
+    </div>
+    <footer class="cafe-footer"><span>ASSIGNMENT 4 / TASK 03</span><a href="docs/task3-audit.md">Read the form audit <span aria-hidden="true">↗</span></a><span>MADE WITH SEMANTIC HTML</span></footer>
+  </main>
+</body>
+</html>

@@ -1,0 +1,72 @@
+.cafe-page { --cafe-ink: #243f32; --cafe-muted: #687366; --cafe-paper: #fbfaf6; --cafe-line: #dedfd5; background: var(--cafe-paper); color: var(--cafe-ink); font-family: "Montserrat", sans-serif; }
+.cafe-page a { color: inherit; }
+.cafe-page .container { max-width: 1240px; }
+.cafe-skip { position: absolute; top: -5rem; left: 1rem; z-index: 20; padding: .8rem 1rem; background: #fff; border: 2px solid var(--cafe-ink); }
+.cafe-skip:focus { top: 1rem; }
+.cafe-page :focus-visible { outline: 3px solid #a56516; outline-offset: 4px; }
+.cafe-header { border-bottom: 1px solid var(--cafe-line); }
+.cafe-header-inner { display: flex; align-items: center; justify-content: space-between; min-height: 88px; gap: 1.5rem; }
+.cafe-brand { display: inline-flex; align-items: center; gap: .8rem; color: var(--cafe-ink); text-decoration: none; font-size: .7rem; font-weight: 700; letter-spacing: .12em; white-space: nowrap; }
+.cafe-brand-mark { display: grid; place-items: center; width: 36px; height: 36px; border-radius: 50%; background: var(--cafe-ink); color: #faf8ef; font-size: 1rem; letter-spacing: -.08em; padding-right: 2px; }
+.cafe-nav { display: flex; align-items: center; gap: 1.8rem; margin: 0; padding: 0; list-style: none; }
+.cafe-nav a { display: inline-flex; align-items: center; gap: .5rem; min-height: 44px; text-decoration: none; font-size: .75rem; font-weight: 600; color: #73796f; }
+.cafe-nav a[aria-current="page"], .cafe-nav a:hover { color: #243f32; }
+.cafe-nav-dot { width: 6px; height: 6px; background: #426449; border-radius: 50%; }
+.cafe-main { padding-top: 30px; }
+.cafe-page-caption { display: flex; justify-content: space-between; gap: 1rem; margin-bottom: 25px; color: #6d7568; font-size: .6rem; font-weight: 600; letter-spacing: .14em; }
+.cafe-layout { display: grid; grid-template-columns: .95fr 1.05fr; border: 1px solid var(--cafe-line); border-radius: 7px; overflow: hidden; background: #fffefb; }
+.cafe-story { display: flex; flex-direction: column; padding: 42px 42px 30px; background: #e9ebdf; min-width: 0; }
+.cafe-wordmark { display: flex; align-items: center; gap: .75rem; font-weight: 700; font-size: .69rem; letter-spacing: .13em; margin-bottom: 63px; }
+.cafe-wordmark > span { font-size: 2rem; line-height: 1; font-weight: 400; }
+.cafe-eyebrow { color: #4e664c; font-size: .6rem; letter-spacing: .15em; font-weight: 700; margin: 0 0 17px; }
+.cafe-story h1 { font-size: clamp(2.25rem, 3.55vw, 3.2rem); line-height: 1.17; font-weight: 500; letter-spacing: -.07em; margin: 0 0 23px; }
+.cafe-story h1 span { color: #62784b; }
+.cafe-intro { max-width: 330px; font-size: .8rem; line-height: 1.95; color: #56634e; margin-bottom: 17px; }
+.cafe-table-art { margin: 24px -12px 15px; max-width: 440px; }
+.cafe-table-art svg { width: 100%; height: auto; display: block; }
+.cafe-story-bottom { display: flex; align-items: center; gap: 14px; margin-top: auto; padding-top: 23px; border-top: 1px solid #cfd4c2; }
+.cafe-story-bottom p { font-size: .64rem; line-height: 1.8; color: #53644d; margin: 0; }
+.cafe-story-bottom strong { font-weight: 600; }
+.cafe-leaf { display: grid; place-items: center; width: 34px; height: 34px; border: 1px solid #b7c0a9; border-radius: 50%; font-size: 1.25rem; }
+.cafe-form-card { padding: 39px 40px 30px; min-width: 0; }
+.cafe-form-top { display: flex; align-items: center; justify-content: space-between; }
+.cafe-form-top .cafe-eyebrow { margin-bottom: 8px; }
+.cafe-small-flower { color: #7c8f60; font-size: 1.6rem; }
+.cafe-form-card h2 { font-size: 1.8rem; font-weight: 600; letter-spacing: -.055em; margin-bottom: 9px; }
+.cafe-form-intro { font-size: .75rem; color: #6a7265; margin-bottom: 18px; }
+.cafe-required-note { font-size: .6rem; color: #677061; margin-bottom: 21px; }
+.cafe-form .form-label, .cafe-seating legend { display: block; font-size: .76rem; font-weight: 600; color: #344d39; margin-bottom: 8px; }
+.cafe-optional { color: #70796b; font-weight: 400; font-size: .67rem; }
+.cafe-form .form-control, .cafe-form .form-select { font-family: inherit; min-height: 45px; padding: .65rem .8rem; font-size: .8rem; color: #293f30; border: 1px solid #d9ddd1; border-radius: 4px; background-color: #fffefb; }
+.cafe-form .form-control::placeholder { color: #818779; opacity: 1; }
+.cafe-form .form-select { padding-right: 2.25rem; }
+.cafe-form .form-control:focus, .cafe-form .form-select:focus { border-color: #537446; box-shadow: 0 0 0 3px #6d885e25; }
+.cafe-form .form-text { font-size: .64rem; color: #737b6c; margin-top: 5px; }
+.cafe-seating { margin: 21px 0 20px; padding: 0; border: 0; }
+.cafe-seating legend { float: none; width: auto; }
+.cafe-seat-options { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.cafe-seat-option { display: flex; align-items: center; gap: 10px; min-height: 66px; border: 1px solid #d9ddd1; padding: 12px; border-radius: 4px; cursor: pointer; }
+.cafe-seat-option:hover, .cafe-seat-option:has(input:checked) { background: #f0f3e8; border-color: #6b8154; }
+.cafe-seat-option > span { font-size: .78rem; font-weight: 600; }
+.cafe-seat-option small { display: block; margin-top: 4px; font-size: .61rem; color: #6b7564; font-weight: 400; }
+.cafe-form .form-check-input { margin-top: 0; width: 17px; height: 17px; flex: 0 0 17px; border-color: #9fa990; cursor: pointer; }
+.cafe-form .form-check-input:checked { background-color: #4c6945; border-color: #4c6945; }
+.cafe-form .form-check-input:focus { box-shadow: 0 0 0 3px #6d885e25; }
+.cafe-comments textarea { min-height: 87px; resize: vertical; }
+.cafe-terms { display: flex; align-items: center; gap: 10px; padding-left: 0; margin: 20px 0 6px; }
+.cafe-terms .form-check-input { margin-left: 0; }
+.cafe-terms .form-check-label { font-size: .73rem; cursor: pointer; }
+.cafe-terms-details { margin: 0 0 20px 27px; font-size: .66rem; color: #68745e; }
+.cafe-terms-details summary { width: fit-content; padding: 3px 0; text-decoration: underline; text-underline-offset: 3px; cursor: pointer; }
+.cafe-terms-details p { max-width: 350px; line-height: 1.7; margin: 7px 0 0; }
+.cafe-submit { display: flex; align-items: center; justify-content: center; position: relative; width: 100%; min-height: 48px; background: #294b36; color: #fffef7; border: 1px solid #294b36; border-radius: 4px; font-size: .73rem; font-weight: 600; }
+.cafe-submit span { position: absolute; right: 18px; font-size: 1.1rem; }
+.cafe-submit:hover, .cafe-submit:active { background: #1b3726 !important; color: #fff !important; border-color: #1b3726 !important; }
+.cafe-submit:focus-visible { background: #294b36; color: #fff; }
+.cafe-demo-note { text-align: center; color: #6d7665; font-size: .55rem; margin: 11px 0 0; }
+.cafe-footer { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px; padding: 23px 0 30px; color: #747b6c; font-size: .55rem; font-weight: 500; letter-spacing: .07em; }
+.cafe-footer a { min-height: 28px; display: inline-flex; align-items: center; text-decoration: underline; text-underline-offset: 4px; letter-spacing: 0; font-size: .65rem; }
+@media (max-width: 991.98px) { .cafe-layout { grid-template-columns: .85fr 1.15fr; } .cafe-story { padding: 32px 25px; } .cafe-form-card { padding: 30px 25px; } .cafe-wordmark { margin-bottom: 40px; font-size: .6rem; } .cafe-story h1 { font-size: 2.25rem; } .cafe-intro { font-size: .73rem; } .cafe-seat-option { padding: 10px 8px; gap: 7px; } }
+@media (max-width: 767.98px) { .cafe-layout { grid-template-columns: 1fr; } .cafe-story { position: relative; padding: 30px; overflow: hidden; } .cafe-wordmark { margin-bottom: 30px; } .cafe-story h1 { font-size: 2.5rem; } .cafe-intro { max-width: 330px; padding-right: 24px; } .cafe-table-art { position: absolute; bottom: 5px; right: -15px; width: 38%; opacity: .6; margin: 0; } .cafe-story-bottom { max-width: 230px; margin-top: 10px; padding-top: 15px; } .cafe-form-card { padding: 30px; } .cafe-nav { gap: 1.1rem; } .cafe-page-caption { margin-bottom: 18px; } }
+@media (max-width: 575.98px) { .cafe-header-inner { min-height: 75px; gap: 10px; } .cafe-brand { font-size: .57rem; gap: .45rem; letter-spacing: .06em; } .cafe-brand-mark { width: 30px; height: 30px; font-size: .9rem; } .cafe-nav { gap: .75rem; } .cafe-nav a { font-size: .61rem; gap: .25rem; } .cafe-main { padding-top: 20px; } .cafe-page-caption { font-size: .48rem; letter-spacing: .07em; } .cafe-story { padding: 27px 23px; } .cafe-story h1 { font-size: 2.3rem; } .cafe-table-art { width: 36%; right: 0; bottom: 15px; } .cafe-form-card { padding: 29px 23px; } .cafe-form-card h2 { font-size: 1.65rem; } .cafe-form .form-control, .cafe-form .form-select { font-size: 1rem; } .cafe-seat-option small { font-size: .52rem; } .cafe-footer { justify-content: flex-start; } .cafe-footer > span:last-child { margin-left: auto; } }
+@media (max-width: 359px) { .cafe-brand { font-size: .5rem; } .cafe-nav { gap: .5rem; } .cafe-nav a { font-size: .56rem; } .cafe-form-card { padding: 25px 17px; } .cafe-seat-options { gap: 8px; } .cafe-seat-option small { font-size: .48rem; } }

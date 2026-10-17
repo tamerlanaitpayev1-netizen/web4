@@ -1,0 +1,11 @@
+@font-face {
+  font-family: Montserrat;
+  src: url("fonts/Montserrat.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+body { font-family: Montserrat, sans-serif; }
+:focus-visible { outline: 3px solid #0f6b5f; outline-offset: 4px; }
+

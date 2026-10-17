@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="AITU Hack 2026 registration form — a student project demonstrating HTML form validation.">
+  <title>Join AITU Hack 2026 · Assignment 4</title>
+  <link rel="stylesheet" href="assets/vendor/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/common.css">
+  <link rel="stylesheet" href="assets/task2.css">
+</head>
+<body class="hack-page">
+  <a class="skip-link" href="#registration">Skip to registration</a>
+  <header class="hack-header">
+    <div class="container hack-header-inner">
+      <a class="hack-brand" href="task2.html" aria-label="AITU Hack 2026 home"><span class="brand-symbol" aria-hidden="true">a<span>h</span></span><span>AITU HACK<span class="brand-year">2026</span></span></a>
+      <a class="back-link" href="index.html"><span aria-hidden="true">↗</span> All assignments</a>
+    </div>
+  </header>
+
+  <main class="container hack-main">
+    <div class="event-eyebrow"><span class="status-dot" aria-hidden="true"></span> THE NEXT CHAPTER STARTS HERE <span class="eyebrow-line" aria-hidden="true"></span> 20—22 NOVEMBER</div>
+    <div class="hack-layout">
+      <aside class="event-sidebar" aria-labelledby="event-title">
+        <div class="event-intro">
+          <p class="event-kicker">CREATE. COLLABORATE. SHIP.</p>
+          <h1 id="event-title">Small team.<br>Big <span>ideas.</span></h1>
+          <p class="event-description">Three days to turn your what-if into what’s next. Bring your curiosity. Build something that matters.</p>
+          <div class="event-art" aria-hidden="true"><span class="art-orbit orbit-one"></span><span class="art-orbit orbit-two"></span><span class="art-orbit orbit-three"></span><span class="art-code">&lt;/&gt;</span><span class="art-dot"></span><span class="art-plus">+</span></div>
+        </div>
+        <div class="event-details">
+          <div class="event-fact"><span class="fact-icon" aria-hidden="true">↗</span><div><span class="fact-label">THE PLACE</span><p>Astana IT University</p></div></div>
+          <div class="event-fact"><span class="fact-icon" aria-hidden="true">◷</span><div><span class="fact-label">THE DATES</span><p>20–22 November 2026</p></div></div>
+          <div class="event-fact"><span class="fact-icon" aria-hidden="true">⌘</span><div><span class="fact-label">YOUR PEOPLE</span><p>1–4 builders per team</p></div></div>
+        </div>
+        <div class="track-summary"><span class="fact-label">FOUR WAYS TO MAKE AN IMPACT</span><div class="track-tags"><span>Web</span><span>Mobile</span><span>AI</span><span>GameDev</span></div></div>
+        <p class="sidebar-note">First hackathon? You belong here.<br>Every experience level is welcome.</p>
+      </aside>
+
+      <section class="registration-panel" aria-labelledby="registration-title">
+        <div class="registration-heading"><div><span class="section-eyebrow">LET’S MAKE IT HAPPEN</span><h2 id="registration-title">Save your spot.</h2></div><span class="registration-mark" aria-hidden="true">↗</span></div>
+        <p class="registration-description">Tell us a little about yourself and your next big idea.</p>
+        <p class="required-note">Fields marked <span aria-hidden="true">*</span> are required.</p>
+
+        <form id="registration" action="completed.html" method="post">
+          <fieldset class="form-section">
+            <legend><span class="section-number" aria-hidden="true">01</span> A little about you</legend>
+            <div class="row g-4">
+              <div class="col-12">
+                <label class="form-label" for="full-name">Full name <span class="required-star" aria-hidden="true">*</span></label>
+                <input class="form-control" id="full-name" name="full_name" type="text" placeholder="e.g. Aida Saparova" autocomplete="name" minlength="2" maxlength="40" required aria-describedby="name-help name-error">
+                <div class="form-text" id="name-help">Use 2–40 characters.</div>
+                <div class="invalid-feedback" id="name-error">Enter your full name using 2–40 characters.</div>
+              </div>
+              <div class="col-md-8">
+                <label class="form-label" for="university-email">University email <span class="required-star" aria-hidden="true">*</span></label>
+                <input class="form-control" id="university-email" name="email" type="email" placeholder="you@university.edu" autocomplete="email" required aria-describedby="email-help email-error">
+                <div class="form-text" id="email-help">Enter a valid email address.</div>
+                <div class="invalid-feedback" id="email-error">Enter a valid email, such as you@university.edu.</div>
+              </div>
+              <div class="col-md-4">
+                <label class="form-label" for="age">Age <span class="required-star" aria-hidden="true">*</span></label>
+                <input class="form-control" id="age" name="age" type="number" placeholder="18" min="16" max="30" step="1" required aria-describedby="age-help age-error">
+                <div class="form-text" id="age-help">16–30 years old.</div>
+                <div class="invalid-feedback" id="age-error">Enter a whole number from 16 to 30.</div>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="form-section">
+            <legend><span class="section-number" aria-hidden="true">02</span> Your hackathon plans</legend>
+            <div class="row g-4">
+              <div class="col-md-6">
+                <label class="form-label" for="team-size">Team size <span class="required-star" aria-hidden="true">*</span></label>
+                <input class="form-control" id="team-size" name="team_size" type="number" placeholder="1" min="1" max="4" step="1" required aria-describedby="team-help team-error">
+                <div class="form-text" id="team-help">1–4 participants, including you.</div>
+                <div class="invalid-feedback" id="team-error">Choose a team size of 1, 2, 3, or 4.</div>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label" for="track">Choose your track <span class="required-star" aria-hidden="true">*</span></label>
+                <select class="form-select" id="track" name="track" required aria-describedby="track-help track-error">
+                  <option value="" selected disabled>Select a track</option>
+                  <option value="Web">Web</option><option value="Mobile">Mobile</option><option value="AI">AI</option><option value="GameDev">GameDev</option>
+                </select>
+                <div class="form-text" id="track-help">Pick the area you want to build in.</div>
+                <div class="invalid-feedback" id="track-error">Select Web, Mobile, AI, or GameDev.</div>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label" for="arrival-date">Arrival date <span class="required-star" aria-hidden="true">*</span></label>
+                <input class="form-control" id="arrival-date" name="arrival_date" type="date" min="2026-11-20" max="2026-11-22" required aria-describedby="arrival-help arrival-error">
+                <div class="form-text" id="arrival-help">20–22 November 2026.</div>
+                <div class="invalid-feedback" id="arrival-error">Choose a date from 20 to 22 November 2026.</div>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label" for="checkin-time">Check-in time <span class="required-star" aria-hidden="true">*</span></label>
+                <input class="form-control" id="checkin-time" name="checkin_time" type="time" min="09:00" max="18:00" step="1800" required aria-describedby="checkin-help checkin-error">
+                <div class="form-text" id="checkin-help">09:00–18:00, in 30-minute intervals.</div>
+                <div class="invalid-feedback" id="checkin-error">Choose a half-hour slot between 09:00 and 18:00.</div>
+              </div>
+              <div class="col-12">
+                <label class="form-label" for="entry-fee">Entry fee <span class="required-star" aria-hidden="true">*</span></label>
+                <div class="fee-field"><input class="form-control" id="entry-fee" name="entry_fee" type="number" placeholder="0" min="0" max="5000" step="500" required aria-describedby="fee-help fee-error"><span class="currency-label" aria-hidden="true">KZT</span></div>
+                <div class="form-text" id="fee-help">0–5,000 KZT, in increments of 500 KZT. No payment is collected.</div>
+                <div class="invalid-feedback" id="fee-error">Enter an amount from 0 to 5,000 KZT in increments of 500.</div>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="form-section">
+            <legend><span class="section-number" aria-hidden="true">03</span> What you bring</legend>
+            <div class="row g-4">
+              <div class="col-12">
+                <fieldset class="experience-group" aria-describedby="experience-help experience-error">
+                  <legend class="form-label">Experience level <span class="required-star" aria-hidden="true">*</span></legend>
+                  <div class="experience-options">
+                    <label class="experience-option" for="experience-beginner"><input class="form-check-input" id="experience-beginner" type="radio" name="experience" value="Beginner" required><span>Beginner</span></label>
+                    <label class="experience-option" for="experience-intermediate"><input class="form-check-input" id="experience-intermediate" type="radio" name="experience" value="Intermediate" required><span>Intermediate</span></label>
+                    <label class="experience-option" for="experience-advanced"><input class="form-check-input" id="experience-advanced" type="radio" name="experience" value="Advanced" required><span>Advanced</span></label>
+                  </div>
+                  <div class="form-text" id="experience-help">There’s a place for every starting point.</div>
+                  <div class="invalid-feedback" id="experience-error">Choose your experience level.</div>
+                </fieldset>
+              </div>
+              <div class="col-12">
+                <label class="form-label" for="github-url">GitHub profile <span class="optional-label">Optional</span></label>
+                <input class="form-control" id="github-url" name="github_url" type="url" placeholder="https://github.com/your-username" autocomplete="url" aria-describedby="github-help github-error">
+                <div class="form-text" id="github-help">Include the full URL, starting with https://.</div>
+                <div class="invalid-feedback" id="github-error">Enter a valid URL, or leave this field empty.</div>
+              </div>
+              <div class="col-12">
+                <label class="form-label" for="password">Create a password <span class="required-star" aria-hidden="true">*</span></label>
+                <input class="form-control" id="password" name="password" type="password" placeholder="Choose a password" autocomplete="new-password" minlength="8" maxlength="20" required aria-describedby="password-help password-error">
+                <div class="form-text" id="password-help">Use 8–20 characters. For this demo, use a made-up password.</div>
+                <div class="invalid-feedback" id="password-error">Enter a password with 8–20 characters.</div>
+              </div>
+              <div class="col-12">
+                <label class="form-label" for="motivation">What makes you want to join? <span class="required-star" aria-hidden="true">*</span></label>
+                <textarea class="form-control" id="motivation" name="motivation" rows="4" minlength="50" maxlength="300" placeholder="An idea you can’t stop thinking about, a skill you want to learn, or a problem you want to solve…" required aria-describedby="motivation-help motivation-error"></textarea>
+                <div class="form-text" id="motivation-help">Tell us in 50–300 characters.</div>
+                <div class="invalid-feedback" id="motivation-error">Share your motivation using 50–300 characters.</div>
+              </div>
+            </div>
+          </fieldset>
+
+          <div class="form-finish">
+            <div class="form-check agreement-field">
+              <input class="form-check-input" id="agreement" name="agreement" type="checkbox" value="accepted" required aria-describedby="agreement-error">
+              <label class="form-check-label" for="agreement">I agree to the event rules and code of conduct. <span class="required-star" aria-hidden="true">*</span></label>
+              <div class="invalid-feedback" id="agreement-error">Please agree before submitting your registration.</div>
+            </div>
+            <details class="event-rules"><summary>Read the event rules &amp; code of conduct</summary><p>Work in a team of up to four, credit the work of others, and treat all participants with respect. Harassment and discrimination are not acceptable. Keep your project lawful and respect other people’s privacy.</p></details>
+            <button class="btn register-button" type="submit"><span>Let’s build something</span><span aria-hidden="true">↗</span></button>
+            <p class="submit-note">Your next great collaboration starts with a hello.</p>
+          </div>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <footer class="hack-footer container"><span>AITU HACK <span class="footer-year">2026</span></span><span>Assignment 4 · Task 2 · Registration demo</span><a href="#registration">Back to form <span aria-hidden="true">↑</span></a></footer>
+</body>
+</html>

@@ -1,0 +1,61 @@
+:root {
+  --train-green: #0f6b5f;
+  --train-gold: #f2a93b;
+  --train-ink: #16302b;
+  --train-field: #f4f7f5;
+  --train-background: #e6efec;
+}
+body { background: var(--train-background); color: var(--train-ink); }
+.train-page { padding: clamp(.75rem, 2.65vw, 2.5rem); }
+.ticket-card { overflow: hidden; border-radius: 2.2rem; background: #fff; box-shadow: 0 1.2rem 2.2rem #16302b1f; }
+.ticket-header { padding: 2.1rem 3.6rem; background: var(--train-green); color: #fff; }
+.ticket-header h1 { margin: 0; font-weight: 700; font-size: clamp(1.4rem, 3.15vw, 2.65rem); }
+.ticket-form { padding: 3.7rem 4rem; font-size: 1.3rem; }
+.trip-choice { margin-bottom: 2rem; }
+.trip-button { --bs-btn-active-bg: var(--train-green); --bs-btn-active-border-color: var(--train-green); --bs-btn-active-color: #fff; --bs-btn-hover-bg: var(--train-background); --bs-btn-hover-color: var(--train-green); --bs-btn-hover-border-color: var(--train-green); color: var(--train-green); border: 1.5px solid var(--train-green); border-radius: 3rem; padding: .7rem 1.8rem; font-size: inherit; font-weight: 600; }
+.btn-check:focus-visible + .trip-button { outline: 3px solid var(--train-gold); outline-offset: 4px; box-shadow: none; }
+.route-row, .details-row, .carriage-row, .contacts-row { margin-bottom: 1.9rem; }
+.form-label { margin-bottom: .6rem; font-size: 1.22rem; font-weight: 600; }
+.form-control, .form-select { min-inline-size: 0; min-height: 3.25rem; border: 1.5px solid #d7e1dd; border-radius: 1rem; background-color: var(--train-field); color: var(--train-ink); padding: .55rem 1rem; font-size: inherit; }
+.form-control::placeholder { color: #646d69; opacity: 1; }
+.form-control:focus, .form-select:focus { background-color: var(--train-field); border-color: var(--train-green); box-shadow: 0 0 0 .2rem #0f6b5f20; }
+.route-field { display: flex; flex-direction: column; padding: .55rem 1rem .65rem; border: 1.5px solid #d7e1dd; border-radius: 1rem; background: var(--train-field); }
+.route-field:focus-within { outline: 2px solid var(--train-green); outline-offset: 2px; }
+.route-field .form-label { margin: 0; color: #68726d; font-size: 1.05rem; font-weight: 400; }
+.route-field .form-control { padding: 0; min-height: 0; border: 0; border-radius: 0; background: transparent; box-shadow: none; }
+.route-field .form-control::placeholder { color: var(--train-ink); }
+.route-field .form-control:focus-visible { outline: none; }
+.carriage-options { gap: .6rem 1.6rem; }
+.carriage-options .form-check { margin: 0; }
+.form-check-input { border-color: #a3b6ae; }
+.form-check-input:checked { background-color: var(--train-green); border-color: var(--train-green); }
+.form-check-input:focus { border-color: var(--train-green); box-shadow: 0 0 0 .2rem #0f6b5f25; }
+.input-group-text { border: 0; border-radius: 1rem 0 0 1rem; background: var(--train-green); color: #fff; font-size: inherit; font-weight: 700; padding-inline: 1rem; }
+.input-group .form-control { border-radius: 0 1rem 1rem 0 !important; }
+.preferences { display: grid; gap: .65rem; margin: .1rem 0 2.1rem; }
+.preferences .form-check { margin: 0; }
+.form-actions { gap: .65rem; }
+.form-actions .btn { border-radius: 4rem; font-size: inherit; font-weight: 700; padding: .9rem 2.6rem; border: 1.5px solid var(--train-ink); }
+.clear-button { color: var(--train-ink); background: #fff; }
+.clear-button:hover { background: var(--train-background); }
+.form-actions .find-button { border-color: var(--train-gold); color: var(--train-ink); background: var(--train-gold); }
+.find-button:hover { background: #e99b25; }
+.assignment-nav { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 1rem; padding: 1.5rem .5rem .25rem; font-size: .8rem; }
+.assignment-nav a { color: var(--train-green); text-underline-offset: .25rem; }
+@media (max-width: 767.98px) {
+  .ticket-card { border-radius: 1.6rem; }
+  .ticket-header { padding: 1.3rem; }
+  .ticket-form { padding: 1.5rem; font-size: 1rem; }
+  .trip-choice { margin-bottom: 1.5rem; }
+  .trip-choice .btn-group { display: flex; }
+  .trip-button { flex: 1; padding: .55rem .5rem; }
+  .route-row, .details-row, .carriage-row, .contacts-row { margin-bottom: 1.5rem; }
+  .form-label { font-size: 1rem; margin-bottom: .55rem; }
+  .route-field { padding: .45rem .75rem; border-radius: .8rem; }
+  .route-field .form-label { font-size: .85rem; margin: 0; }
+  .form-control, .form-select { min-height: 2.6rem; padding: .4rem .75rem; border-radius: .8rem; }
+  .carriage-options { gap: .5rem .9rem; }
+  .input-group-text { padding-inline: .7rem; border-radius: .8rem 0 0 .8rem; }
+  .preferences { gap: .7rem; margin-bottom: 1.6rem; }
+  .form-actions .btn { padding: .7rem 1rem; }
+}

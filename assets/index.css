@@ -1,0 +1,15 @@
+body { background: #e6efec; color: #16302b; }
+.intro { padding: 2rem 0 3rem; max-width: 54rem; }
+.eyebrow { font-size: .75rem; letter-spacing: .13em; font-weight: 700; color: #0f6b5f; }
+h1 { font-size: clamp(2.5rem, 6vw, 4.7rem); font-weight: 750; line-height: 1.06; letter-spacing: -.045em; margin: 1.3rem 0; }
+.lead { max-width: 45rem; font-size: 1.1rem; line-height: 1.7; }
+.student { margin-top: 2rem; font-weight: 600; }
+.student span { margin-left: .8rem; font-size: .8rem; background: #fff; border-radius: 2rem; padding: .4rem .8rem; }
+.exercise { display: flex; flex-direction: column; height: 100%; background: #fff; border: 1px solid #cfdfd7; border-radius: 1.4rem; padding: 1.8rem; }
+.number { font-size: .65rem; font-weight: 700; letter-spacing: .08em; color: #0f6b5f; }
+h2 { font-size: 1.6rem; line-height: 1.25; font-weight: 650; margin: 1rem 0; }
+.exercise p:not(.number) { font-size: .88rem; line-height: 1.7; color: #56685f; }
+.exercise .btn { margin-top: auto; background: #0f6b5f; color: #fff; border-radius: 3rem; padding: .8rem 1rem; font-size: .8rem; font-weight: 600; display: flex; justify-content: space-between; }
+.exercise .btn:hover { background: #16302b; }
+footer { display: flex; flex-wrap: wrap; gap: 1rem 2rem; margin-top: 2.5rem; font-size: .8rem; }
+footer a { color: #0f6b5f; text-underline-offset: .3rem; }
