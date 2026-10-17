@@ -1,0 +1,1237 @@
+{
+  "created_utc": "2026-10-17T13:05:39.761493+00:00",
+  "browser": "Chromium 145.0.7632.6",
+  "base_url": "http://127.0.0.1:8000",
+  "passed": 88,
+  "total": 88,
+  "results": [
+    {
+      "test": "HTML attributes: full-name",
+      "passed": true,
+      "detail": {
+        "expected": {
+          "type": "text",
+          "minlength": "2",
+          "maxlength": "40",
+          "required": ""
+        },
+        "actual": {
+          "type": "text",
+          "minlength": "2",
+          "maxlength": "40",
+          "required": ""
+        }
+      }
+    },
+    {
+      "test": "HTML attributes: university-email",
+      "passed": true,
+      "detail": {
+        "expected": {
+          "type": "email",
+          "required": ""
+        },
+        "actual": {
+          "type": "email",
+          "required": ""
+        }
+      }
+    },
+    {
+      "test": "HTML attributes: age",
+      "passed": true,
+      "detail": {
+        "expected": {
+          "type": "number",
+          "min": "16",
+          "max": "30",
+          "step": "1",
+          "required": ""
+        },
+        "actual": {
+          "type": "number",
+          "min": "16",
+          "max": "30",
+          "step": "1",
+          "required": ""
+        }
+      }
+    },
+    {
+      "test": "HTML attributes: team-size",
+      "passed": true,
+      "detail": {
+        "expected": {
+          "type": "number",
+          "min": "1",
+          "max": "4",
+          "step": "1",
+          "required": ""
+        },
+        "actual": {
+          "type": "number",
+          "min": "1",
+          "max": "4",
+          "step": "1",
+          "required": ""
+        }
+      }
+    },
+    {
+      "test": "HTML attributes: track",
+      "passed": true,
+      "detail": {
+        "expected": {
+          "required": ""
+        },
+        "actual": {
+          "required": ""
+        }
+      }
+    },
+    {
+      "test": "HTML attributes: arrival-date",
+      "passed": true,
+      "detail": {
+        "expected": {
+          "type": "date",
+          "min": "2026-11-20",
+          "max": "2026-11-22",
+          "required": ""
+        },
+        "actual": {
+          "type": "date",
+          "min": "2026-11-20",
+          "max": "2026-11-22",
+          "required": ""
+        }
+      }
+    },
+    {
+      "test": "HTML attributes: checkin-time",
+      "passed": true,
+      "detail": {
+        "expected": {
+          "type": "time",
+          "min": "09:00",
+          "max": "18:00",
+          "step": "1800",
+          "required": ""
+        },
+        "actual": {
+          "type": "time",
+          "min": "09:00",
+          "max": "18:00",
+          "step": "1800",
+          "required": ""
+        }
+      }
+    },
+    {
+      "test": "HTML attributes: entry-fee",
+      "passed": true,
+      "detail": {
+        "expected": {
+          "type": "number",
+          "min": "0",
+          "max": "5000",
+          "step": "500",
+          "required": ""
+        },
+        "actual": {
+          "type": "number",
+          "min": "0",
+          "max": "5000",
+          "step": "500",
+          "required": ""
+        }
+      }
+    },
+    {
+      "test": "HTML attributes: github-url",
+      "passed": true,
+      "detail": {
+        "expected": {
+          "type": "url",
+          "required": null
+        },
+        "actual": {
+          "type": "url",
+          "required": null
+        }
+      }
+    },
+    {
+      "test": "HTML attributes: password",
+      "passed": true,
+      "detail": {
+        "expected": {
+          "type": "password",
+          "minlength": "8",
+          "maxlength": "20",
+          "required": ""
+        },
+        "actual": {
+          "type": "password",
+          "minlength": "8",
+          "maxlength": "20",
+          "required": ""
+        }
+      }
+    },
+    {
+      "test": "HTML attributes: motivation",
+      "passed": true,
+      "detail": {
+        "expected": {
+          "minlength": "50",
+          "maxlength": "300",
+          "required": ""
+        },
+        "actual": {
+          "minlength": "50",
+          "maxlength": "300",
+          "required": ""
+        }
+      }
+    },
+    {
+      "test": "HTML attributes: agreement",
+      "passed": true,
+      "detail": {
+        "expected": {
+          "type": "checkbox",
+          "required": ""
+        },
+        "actual": {
+          "type": "checkbox",
+          "required": ""
+        }
+      }
+    },
+    {
+      "test": "Task 2 contains no script, pattern or novalidate",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "Track offers exactly Web, Mobile, AI and GameDev",
+      "passed": true,
+      "detail": [
+        "Web",
+        "Mobile",
+        "AI",
+        "GameDev"
+      ]
+    },
+    {
+      "test": "Three experience radios form one required group",
+      "passed": true,
+      "detail": [
+        {
+          "name": "experience",
+          "required": true
+        },
+        {
+          "name": "experience",
+          "required": true
+        },
+        {
+          "name": "experience",
+          "required": true
+        }
+      ]
+    },
+    {
+      "test": "No error feedback on initial page load",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "test": "PDF example: Full name: Anna-Maria Lee",
+      "passed": true,
+      "detail": {
+        "expected_valid": true,
+        "actual_valid": true,
+        "submit_events": 1,
+        "invalid_controls": []
+      }
+    },
+    {
+      "test": "PDF example: Full name: A",
+      "passed": true,
+      "detail": {
+        "expected_valid": false,
+        "actual_valid": false,
+        "submit_events": 0,
+        "invalid_controls": [
+          {
+            "id": "full-name",
+            "value": "A",
+            "missing": false,
+            "type": false,
+            "underflow": false,
+            "overflow": false,
+            "step": false,
+            "short": true,
+            "long": false
+          }
+        ]
+      }
+    },
+    {
+      "test": "PDF example: Email: a.fedenko@astanait.edu.kz",
+      "passed": true,
+      "detail": {
+        "expected_valid": true,
+        "actual_valid": true,
+        "submit_events": 1,
+        "invalid_controls": []
+      }
+    },
+    {
+      "test": "PDF example: Email: a.fedenko",
+      "passed": true,
+      "detail": {
+        "expected_valid": false,
+        "actual_valid": false,
+        "submit_events": 0,
+        "invalid_controls": [
+          {
+            "id": "university-email",
+            "value": "a.fedenko",
+            "missing": false,
+            "type": true,
+            "underflow": false,
+            "overflow": false,
+            "step": false,
+            "short": false,
+            "long": false
+          }
+        ]
+      }
+    },
+    {
+      "test": "PDF example: Email: a.fedenko@",
+      "passed": true,
+      "detail": {
+        "expected_valid": false,
+        "actual_valid": false,
+        "submit_events": 0,
+        "invalid_controls": [
+          {
+            "id": "university-email",
+            "value": "a.fedenko@",
+            "missing": false,
+            "type": true,
+            "underflow": false,
+            "overflow": false,
+            "step": false,
+            "short": false,
+            "long": false
+          }
+        ]
+      }
+    },
+    {
+      "test": "PDF example: Age: 18",
+      "passed": true,
+      "detail": {
+        "expected_valid": true,
+        "actual_valid": true,
+        "submit_events": 1,
+        "invalid_controls": []
+      }
+    },
+    {
+      "test": "PDF example: Age: 15",
+      "passed": true,
+      "detail": {
+        "expected_valid": false,
+        "actual_valid": false,
+        "submit_events": 0,
+        "invalid_controls": [
+          {
+            "id": "age",
+            "value": "15",
+            "missing": false,
+            "type": false,
+            "underflow": true,
+            "overflow": false,
+            "step": false,
+            "short": false,
+            "long": false
+          }
+        ]
+      }
+    },
+    {
+      "test": "PDF example: Age: 31",
+      "passed": true,
+      "detail": {
+        "expected_valid": false,
+        "actual_valid": false,
+        "submit_events": 0,
+        "invalid_controls": [
+          {
+            "id": "age",
+            "value": "31",
+            "missing": false,
+            "type": false,
+            "underflow": false,
+            "overflow": true,
+            "step": false,
+            "short": false,
+            "long": false
+          }
+        ]
+      }
+    },
+    {
+      "test": "PDF example: Team size: 4",
+      "passed": true,
+      "detail": {
+        "expected_valid": true,
+        "actual_valid": true,
+        "submit_events": 1,
+        "invalid_controls": []
+      }
+    },
+    {
+      "test": "PDF example: Team size: 5",
+      "passed": true,
+      "detail": {
+        "expected_valid": false,
+        "actual_valid": false,
+        "submit_events": 0,
+        "invalid_controls": [
+          {
+            "id": "team-size",
+            "value": "5",
+            "missing": false,
+            "type": false,
+            "underflow": false,
+            "overflow": true,
+            "step": false,
+            "short": false,
+            "long": false
+          }
+        ]
+      }
+    },
+    {
+      "test": "PDF example: Team size: 2.5",
+      "passed": true,
+      "detail": {
+        "expected_valid": false,
+        "actual_valid": false,
+        "submit_events": 0,
+        "invalid_controls": [
+          {
+            "id": "team-size",
+            "value": "2.5",
+            "missing": false,
+            "type": false,
+            "underflow": false,
+            "overflow": false,
+            "step": true,
+            "short": false,
+            "long": false
+          }
+        ]
+      }
+    },
+    {
+      "test": "PDF example: Track: Web",
+      "passed": true,
+      "detail": {
+        "expected_valid": true,
+        "actual_valid": true,
+        "submit_events": 1,
+        "invalid_controls": []
+      }
+    },
+    {
+      "test": "PDF example: Track: Choose...",
+      "passed": true,
+      "detail": {
+        "expected_valid": false,
+        "actual_valid": false,
+        "submit_events": 0,
+        "invalid_controls": [
+          {
+            "id": "track",
+            "value": "",
+            "missing": true,
+            "type": false,
+            "underflow": false,
+            "overflow": false,
+            "step": false,
+            "short": false,
+            "long": false
+          }
+        ]
+      }
+    },
+    {
+      "test": "PDF example: Arrival: 2026-11-21",
+      "passed": true,
+      "detail": {
+        "expected_valid": true,
+        "actual_valid": true,
+        "submit_events": 1,
+        "invalid_controls": []
+      }
+    },
+    {
+      "test": "PDF example: Arrival: 2026-11-25",
+      "passed": true,
+      "detail": {
+        "expected_valid": false,
+        "actual_valid": false,
+        "submit_events": 0,
+        "invalid_controls": [
+          {
+            "id": "arrival-date",
+            "value": "2026-11-25",
+            "missing": false,
+            "type": false,
+            "underflow": false,
+            "overflow": true,
+            "step": false,
+            "short": false,
+            "long": false
+          }
+        ]
+      }
+    },
+    {
+      "test": "PDF example: Check-in: 10:30",
+      "passed": true,
+      "detail": {
+        "expected_valid": true,
+        "actual_valid": true,
+        "submit_events": 1,
+        "invalid_controls": []
+      }
+    },
+    {
+      "test": "PDF example: Check-in: 10:15",
+      "passed": true,
+      "detail": {
+        "expected_valid": false,
+        "actual_valid": false,
+        "submit_events": 0,
+        "invalid_controls": [
+          {
+            "id": "checkin-time",
+            "value": "10:15",
+            "missing": false,
+            "type": false,
+            "underflow": false,
+            "overflow": false,
+            "step": true,
+            "short": false,
+            "long": false
+          }
+        ]
+      }
+    },
+    {
+      "test": "PDF example: Check-in: 19:00",
+      "passed": true,
+      "detail": {
+        "expected_valid": false,
+        "actual_valid": false,
+        "submit_events": 0,
+        "invalid_controls": [
+          {
+            "id": "checkin-time",
+            "value": "19:00",
+            "missing": false,
+            "type": false,
+            "underflow": false,
+            "overflow": true,
+            "step": false,
+            "short": false,
+            "long": false
+          }
+        ]
+      }
+    },
+    {
+      "test": "PDF example: Entry fee: 1500",
+      "passed": true,
+      "detail": {
+        "expected_valid": true,
+        "actual_valid": true,
+        "submit_events": 1,
+        "invalid_controls": []
+      }
+    },
+    {
+      "test": "PDF example: Entry fee: 1250",
+      "passed": true,
+      "detail": {
+        "expected_valid": false,
+        "actual_valid": false,
+        "submit_events": 0,
+        "invalid_controls": [
+          {
+            "id": "entry-fee",
+            "value": "1250",
+            "missing": false,
+            "type": false,
+            "underflow": false,
+            "overflow": false,
+            "step": true,
+            "short": false,
+            "long": false
+          }
+        ]
+      }
+    },
+    {
+      "test": "PDF example: Entry fee: 6000",
+      "passed": true,
+      "detail": {
+        "expected_valid": false,
+        "actual_valid": false,
+        "submit_events": 0,
+        "invalid_controls": [
+          {
+            "id": "entry-fee",
+            "value": "6000",
+            "missing": false,
+            "type": false,
+            "underflow": false,
+            "overflow": true,
+            "step": false,
+            "short": false,
+            "long": false
+          }
+        ]
+      }
+    },
+    {
+      "test": "PDF example: Experience: Beginner",
+      "passed": true,
+      "detail": {
+        "expected_valid": true,
+        "actual_valid": true,
+        "submit_events": 1,
+        "invalid_controls": []
+      }
+    },
+    {
+      "test": "PDF example: Experience: none",
+      "passed": true,
+      "detail": {
+        "expected_valid": false,
+        "actual_valid": false,
+        "submit_events": 0,
+        "invalid_controls": [
+          {
+            "id": "experience-beginner",
+            "value": "Beginner",
+            "missing": true,
+            "type": false,
+            "underflow": false,
+            "overflow": false,
+            "step": false,
+            "short": false,
+            "long": false
+          },
+          {
+            "id": "experience-intermediate",
+            "value": "Intermediate",
+            "missing": true,
+            "type": false,
+            "underflow": false,
+            "overflow": false,
+            "step": false,
+            "short": false,
+            "long": false
+          },
+          {
+            "id": "experience-advanced",
+            "value": "Advanced",
+            "missing": true,
+            "type": false,
+            "underflow": false,
+            "overflow": false,
+            "step": false,
+            "short": false,
+            "long": false
+          }
+        ]
+      }
+    },
+    {
+      "test": "PDF example: GitHub: empty",
+      "passed": true,
+      "detail": {
+        "expected_valid": true,
+        "actual_valid": true,
+        "submit_events": 1,
+        "invalid_controls": []
+      }
+    },
+    {
+      "test": "PDF example: GitHub: full HTTPS URL",
+      "passed": true,
+      "detail": {
+        "expected_valid": true,
+        "actual_valid": true,
+        "submit_events": 1,
+        "invalid_controls": []
+      }
+    },
+    {
+      "test": "PDF example: GitHub: no protocol",
+      "passed": true,
+      "detail": {
+        "expected_valid": false,
+        "actual_valid": false,
+        "submit_events": 0,
+        "invalid_controls": [
+          {
+            "id": "github-url",
+            "value": "github.com/yerassyl-dev",
+            "missing": false,
+            "type": true,
+            "underflow": false,
+            "overflow": false,
+            "step": false,
+            "short": false,
+            "long": false
+          }
+        ]
+      }
+    },
+    {
+      "test": "PDF example: Password: Astana2026",
+      "passed": true,
+      "detail": {
+        "expected_valid": true,
+        "actual_valid": true,
+        "submit_events": 1,
+        "invalid_controls": []
+      }
+    },
+    {
+      "test": "PDF example: Password: short",
+      "passed": true,
+      "detail": {
+        "expected_valid": false,
+        "actual_valid": false,
+        "submit_events": 0,
+        "invalid_controls": [
+          {
+            "id": "password",
+            "value": "(test password)",
+            "missing": false,
+            "type": false,
+            "underflow": false,
+            "overflow": false,
+            "step": false,
+            "short": true,
+            "long": false
+          }
+        ]
+      }
+    },
+    {
+      "test": "PDF example: Motivation: 120 characters",
+      "passed": true,
+      "detail": {
+        "expected_valid": true,
+        "actual_valid": true,
+        "submit_events": 1,
+        "invalid_controls": []
+      }
+    },
+    {
+      "test": "PDF example: Motivation: 49 characters",
+      "passed": true,
+      "detail": {
+        "expected_valid": false,
+        "actual_valid": false,
+        "submit_events": 0,
+        "invalid_controls": [
+          {
+            "id": "motivation",
+            "value": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+            "missing": false,
+            "type": false,
+            "underflow": false,
+            "overflow": false,
+            "step": false,
+            "short": true,
+            "long": false
+          }
+        ]
+      }
+    },
+    {
+      "test": "PDF example: Agreement: checked",
+      "passed": true,
+      "detail": {
+        "expected_valid": true,
+        "actual_valid": true,
+        "submit_events": 1,
+        "invalid_controls": []
+      }
+    },
+    {
+      "test": "PDF example: Agreement: unchecked",
+      "passed": true,
+      "detail": {
+        "expected_valid": false,
+        "actual_valid": false,
+        "submit_events": 0,
+        "invalid_controls": [
+          {
+            "id": "agreement",
+            "value": "accepted",
+            "missing": true,
+            "type": false,
+            "underflow": false,
+            "overflow": false,
+            "step": false,
+            "short": false,
+            "long": false
+          }
+        ]
+      }
+    },
+    {
+      "test": "Boundary: Full name lower bound: 2",
+      "passed": true,
+      "detail": {
+        "expected_valid": true,
+        "actual_valid": true,
+        "submit_events": 1,
+        "invalid_controls": []
+      }
+    },
+    {
+      "test": "Boundary: Full name upper bound: 40",
+      "passed": true,
+      "detail": {
+        "expected_valid": true,
+        "actual_valid": true,
+        "submit_events": 1,
+        "invalid_controls": []
+      }
+    },
+    {
+      "test": "Boundary: Age lower bound: 16",
+      "passed": true,
+      "detail": {
+        "expected_valid": true,
+        "actual_valid": true,
+        "submit_events": 1,
+        "invalid_controls": []
+      }
+    },
+    {
+      "test": "Boundary: Age upper bound: 30",
+      "passed": true,
+      "detail": {
+        "expected_valid": true,
+        "actual_valid": true,
+        "submit_events": 1,
+        "invalid_controls": []
+      }
+    },
+    {
+      "test": "Boundary: Age fraction: 18.5",
+      "passed": true,
+      "detail": {
+        "expected_valid": false,
+        "actual_valid": false,
+        "submit_events": 0,
+        "invalid_controls": [
+          {
+            "id": "age",
+            "value": "18.5",
+            "missing": false,
+            "type": false,
+            "underflow": false,
+            "overflow": false,
+            "step": true,
+            "short": false,
+            "long": false
+          }
+        ]
+      }
+    },
+    {
+      "test": "Boundary: Team size lower bound: 1",
+      "passed": true,
+      "detail": {
+        "expected_valid": true,
+        "actual_valid": true,
+        "submit_events": 1,
+        "invalid_controls": []
+      }
+    },
+    {
+      "test": "Boundary: Team size below range: 0",
+      "passed": true,
+      "detail": {
+        "expected_valid": false,
+        "actual_valid": false,
+        "submit_events": 0,
+        "invalid_controls": [
+          {
+            "id": "team-size",
+            "value": "0",
+            "missing": false,
+            "type": false,
+            "underflow": true,
+            "overflow": false,
+            "step": false,
+            "short": false,
+            "long": false
+          }
+        ]
+      }
+    },
+    {
+      "test": "Boundary: Arrival lower bound: 2026-11-20",
+      "passed": true,
+      "detail": {
+        "expected_valid": true,
+        "actual_valid": true,
+        "submit_events": 1,
+        "invalid_controls": []
+      }
+    },
+    {
+      "test": "Boundary: Arrival upper bound: 2026-11-22",
+      "passed": true,
+      "detail": {
+        "expected_valid": true,
+        "actual_valid": true,
+        "submit_events": 1,
+        "invalid_controls": []
+      }
+    },
+    {
+      "test": "Boundary: Arrival before range: 2026-11-19",
+      "passed": true,
+      "detail": {
+        "expected_valid": false,
+        "actual_valid": false,
+        "submit_events": 0,
+        "invalid_controls": [
+          {
+            "id": "arrival-date",
+            "value": "2026-11-19",
+            "missing": false,
+            "type": false,
+            "underflow": true,
+            "overflow": false,
+            "step": false,
+            "short": false,
+            "long": false
+          }
+        ]
+      }
+    },
+    {
+      "test": "Boundary: Check-in lower bound: 09:00",
+      "passed": true,
+      "detail": {
+        "expected_valid": true,
+        "actual_valid": true,
+        "submit_events": 1,
+        "invalid_controls": []
+      }
+    },
+    {
+      "test": "Boundary: Check-in upper bound: 18:00",
+      "passed": true,
+      "detail": {
+        "expected_valid": true,
+        "actual_valid": true,
+        "submit_events": 1,
+        "invalid_controls": []
+      }
+    },
+    {
+      "test": "Boundary: Check-in below range: 08:30",
+      "passed": true,
+      "detail": {
+        "expected_valid": false,
+        "actual_valid": false,
+        "submit_events": 0,
+        "invalid_controls": [
+          {
+            "id": "checkin-time",
+            "value": "08:30",
+            "missing": false,
+            "type": false,
+            "underflow": true,
+            "overflow": false,
+            "step": false,
+            "short": false,
+            "long": false
+          }
+        ]
+      }
+    },
+    {
+      "test": "Boundary: Entry fee lower bound: 0",
+      "passed": true,
+      "detail": {
+        "expected_valid": true,
+        "actual_valid": true,
+        "submit_events": 1,
+        "invalid_controls": []
+      }
+    },
+    {
+      "test": "Boundary: Entry fee upper bound: 5000",
+      "passed": true,
+      "detail": {
+        "expected_valid": true,
+        "actual_valid": true,
+        "submit_events": 1,
+        "invalid_controls": []
+      }
+    },
+    {
+      "test": "Boundary: Entry fee below range: -500",
+      "passed": true,
+      "detail": {
+        "expected_valid": false,
+        "actual_valid": false,
+        "submit_events": 0,
+        "invalid_controls": [
+          {
+            "id": "entry-fee",
+            "value": "-500",
+            "missing": false,
+            "type": false,
+            "underflow": true,
+            "overflow": false,
+            "step": false,
+            "short": false,
+            "long": false
+          }
+        ]
+      }
+    },
+    {
+      "test": "Boundary: Password lower bound: 8",
+      "passed": true,
+      "detail": {
+        "expected_valid": true,
+        "actual_valid": true,
+        "submit_events": 1,
+        "invalid_controls": []
+      }
+    },
+    {
+      "test": "Boundary: Password upper bound: 20",
+      "passed": true,
+      "detail": {
+        "expected_valid": true,
+        "actual_valid": true,
+        "submit_events": 1,
+        "invalid_controls": []
+      }
+    },
+    {
+      "test": "Boundary: Motivation lower bound: 50",
+      "passed": true,
+      "detail": {
+        "expected_valid": true,
+        "actual_valid": true,
+        "submit_events": 1,
+        "invalid_controls": []
+      }
+    },
+    {
+      "test": "Boundary: Motivation upper bound: 300",
+      "passed": true,
+      "detail": {
+        "expected_valid": true,
+        "actual_valid": true,
+        "submit_events": 1,
+        "invalid_controls": []
+      }
+    },
+    {
+      "test": "Boundary: Track: Mobile",
+      "passed": true,
+      "detail": {
+        "expected_valid": true,
+        "actual_valid": true,
+        "submit_events": 1,
+        "invalid_controls": []
+      }
+    },
+    {
+      "test": "Boundary: Track: AI",
+      "passed": true,
+      "detail": {
+        "expected_valid": true,
+        "actual_valid": true,
+        "submit_events": 1,
+        "invalid_controls": []
+      }
+    },
+    {
+      "test": "Boundary: Track: GameDev",
+      "passed": true,
+      "detail": {
+        "expected_valid": true,
+        "actual_valid": true,
+        "submit_events": 1,
+        "invalid_controls": []
+      }
+    },
+    {
+      "test": "maxlength prevents typing past 40: full-name",
+      "passed": true,
+      "detail": {
+        "typed": 41,
+        "stored_length": 40
+      }
+    },
+    {
+      "test": "maxlength prevents typing past 20: password",
+      "passed": true,
+      "detail": {
+        "typed": 21,
+        "stored_length": 20
+      }
+    },
+    {
+      "test": "maxlength prevents typing past 300: motivation",
+      "passed": true,
+      "detail": {
+        "typed": 301,
+        "stored_length": 300
+      }
+    },
+    {
+      "test": "Changed invalid field shows feedback after blur",
+      "passed": true,
+      "detail": {
+        "userInvalid": true,
+        "visible": true,
+        "text": "Enter your full name using 2–40 characters."
+      }
+    },
+    {
+      "test": "No horizontal overflow: index.html at 375px",
+      "passed": true,
+      "detail": {
+        "viewport": 375,
+        "document": 375,
+        "body": 375
+      }
+    },
+    {
+      "test": "No horizontal overflow: index.html at 1280px",
+      "passed": true,
+      "detail": {
+        "viewport": 1280,
+        "document": 1280,
+        "body": 1280
+      }
+    },
+    {
+      "test": "No horizontal overflow: task1.html at 375px",
+      "passed": true,
+      "detail": {
+        "viewport": 375,
+        "document": 375,
+        "body": 375
+      }
+    },
+    {
+      "test": "No horizontal overflow: task1.html at 1280px",
+      "passed": true,
+      "detail": {
+        "viewport": 1280,
+        "document": 1280,
+        "body": 1280
+      }
+    },
+    {
+      "test": "No JavaScript or novalidate: task1.html",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "No horizontal overflow: task2.html at 375px",
+      "passed": true,
+      "detail": {
+        "viewport": 375,
+        "document": 375,
+        "body": 375
+      }
+    },
+    {
+      "test": "No horizontal overflow: task2.html at 1280px",
+      "passed": true,
+      "detail": {
+        "viewport": 1280,
+        "document": 1280,
+        "body": 1280
+      }
+    },
+    {
+      "test": "No JavaScript or novalidate: task2.html",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "No horizontal overflow: task3.html at 375px",
+      "passed": true,
+      "detail": {
+        "viewport": 375,
+        "document": 375,
+        "body": 375
+      }
+    },
+    {
+      "test": "No horizontal overflow: task3.html at 1280px",
+      "passed": true,
+      "detail": {
+        "viewport": 1280,
+        "document": 1280,
+        "body": 1280
+      }
+    },
+    {
+      "test": "No JavaScript or novalidate: task3.html",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "test": "No horizontal overflow: completed.html at 375px",
+      "passed": true,
+      "detail": {
+        "viewport": 375,
+        "document": 375,
+        "body": 375
+      }
+    },
+    {
+      "test": "No horizontal overflow: completed.html at 1280px",
+      "passed": true,
+      "detail": {
+        "viewport": 1280,
+        "document": 1280,
+        "body": 1280
+      }
+    }
+  ]
+}

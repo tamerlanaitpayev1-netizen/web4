@@ -7,5 +7,5 @@
 }
 
 body { font-family: Montserrat, sans-serif; }
-:focus-visible { outline: 3px solid #0f6b5f; outline-offset: 4px; }
+:focus-visible, .btn:focus-visible { outline: 3px solid #0f6b5f; outline-offset: 4px; }
 

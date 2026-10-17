@@ -1,0 +1,566 @@
+{
+  "browser": "Playwright Chromium",
+  "passed": 44,
+  "total": 44,
+  "checks": [
+    {
+      "test": "task1 audit: required fields and connected labels",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "task1 audit: carriage class is one required radio group",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "task1 audit: two journey radios share one name",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "task1 audit: passengers 1-6",
+      "passed": true,
+      "details": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ]
+    },
+    {
+      "test": "task1 audit: every field has a connected label",
+      "passed": true,
+      "details": []
+    },
+    {
+      "test": "task1 audit: source order Clear then Find trains",
+      "passed": true,
+      "details": [
+        "reset",
+        "submit"
+      ]
+    },
+    {
+      "test": "task1 audit: button layout 375px",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "task1 audit: button layout 1280px",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "task1 audit: custom CSS has no fixed widths or absolute positioning",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "task1 audit: required palette appears in custom CSS",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "task1 audit: no script or novalidate",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "task1 1280px: Tab order matches source; no focus trap",
+      "passed": true,
+      "details": {
+        "expected": [
+          "one-way",
+          "from",
+          "to",
+          "departure",
+          "return",
+          "passengers",
+          "seat",
+          "phone",
+          "email",
+          "sms",
+          "train-agreement",
+          "button:Clear",
+          "button:Find trains",
+          "a:index.html",
+          "a:task2.html"
+        ],
+        "actual": [
+          "one-way",
+          "from",
+          "to",
+          "departure",
+          "return",
+          "passengers",
+          "seat",
+          "phone",
+          "email",
+          "sms",
+          "train-agreement",
+          "button:Clear",
+          "button:Find trains",
+          "a:index.html",
+          "a:task2.html"
+        ]
+      }
+    },
+    {
+      "test": "task1 1280px: visible keyboard focus on every Tab stop",
+      "passed": true,
+      "details": {
+        "stops": 15,
+        "failures": []
+      }
+    },
+    {
+      "test": "task1 375px: Tab order matches source; no focus trap",
+      "passed": true,
+      "details": {
+        "expected": [
+          "one-way",
+          "from",
+          "to",
+          "departure",
+          "return",
+          "passengers",
+          "seat",
+          "phone",
+          "email",
+          "sms",
+          "train-agreement",
+          "button:Clear",
+          "button:Find trains",
+          "a:index.html",
+          "a:task2.html"
+        ],
+        "actual": [
+          "one-way",
+          "from",
+          "to",
+          "departure",
+          "return",
+          "passengers",
+          "seat",
+          "phone",
+          "email",
+          "sms",
+          "train-agreement",
+          "button:Clear",
+          "button:Find trains",
+          "a:index.html",
+          "a:task2.html"
+        ]
+      }
+    },
+    {
+      "test": "task1 375px: visible keyboard focus on every Tab stop",
+      "passed": true,
+      "details": {
+        "stops": 15,
+        "failures": []
+      }
+    },
+    {
+      "test": "task1: empty submission blocked by native validation",
+      "passed": true,
+      "details": {
+        "post_requests": 0,
+        "focused_id": "one-way"
+      }
+    },
+    {
+      "test": "task2 1280px: Tab order matches source; no focus trap",
+      "passed": true,
+      "details": {
+        "expected": [
+          "a:#registration",
+          "a:task2.html",
+          "a:index.html",
+          "full-name",
+          "university-email",
+          "age",
+          "team-size",
+          "track",
+          "arrival-date",
+          "checkin-time",
+          "entry-fee",
+          "experience-beginner",
+          "github-url",
+          "password",
+          "motivation",
+          "agreement",
+          "summary:Read the event rules & code of conduct",
+          "button:Let’s build something↗",
+          "a:#registration"
+        ],
+        "actual": [
+          "a:#registration",
+          "a:task2.html",
+          "a:index.html",
+          "full-name",
+          "university-email",
+          "age",
+          "team-size",
+          "track",
+          "arrival-date",
+          "checkin-time",
+          "entry-fee",
+          "experience-beginner",
+          "github-url",
+          "password",
+          "motivation",
+          "agreement",
+          "summary:Read the event rules & code of conduct",
+          "button:Let’s build something↗",
+          "a:#registration"
+        ]
+      }
+    },
+    {
+      "test": "task2 1280px: visible keyboard focus on every Tab stop",
+      "passed": true,
+      "details": {
+        "stops": 19,
+        "failures": []
+      }
+    },
+    {
+      "test": "task2 375px: Tab order matches source; no focus trap",
+      "passed": true,
+      "details": {
+        "expected": [
+          "a:#registration",
+          "a:task2.html",
+          "a:index.html",
+          "full-name",
+          "university-email",
+          "age",
+          "team-size",
+          "track",
+          "arrival-date",
+          "checkin-time",
+          "entry-fee",
+          "experience-beginner",
+          "github-url",
+          "password",
+          "motivation",
+          "agreement",
+          "summary:Read the event rules & code of conduct",
+          "button:Let’s build something↗",
+          "a:#registration"
+        ],
+        "actual": [
+          "a:#registration",
+          "a:task2.html",
+          "a:index.html",
+          "full-name",
+          "university-email",
+          "age",
+          "team-size",
+          "track",
+          "arrival-date",
+          "checkin-time",
+          "entry-fee",
+          "experience-beginner",
+          "github-url",
+          "password",
+          "motivation",
+          "agreement",
+          "summary:Read the event rules & code of conduct",
+          "button:Let’s build something↗",
+          "a:#registration"
+        ]
+      }
+    },
+    {
+      "test": "task2 375px: visible keyboard focus on every Tab stop",
+      "passed": true,
+      "details": {
+        "stops": 19,
+        "failures": []
+      }
+    },
+    {
+      "test": "task2: empty submission blocked by native validation",
+      "passed": true,
+      "details": {
+        "post_requests": 0,
+        "focused_id": "full-name"
+      }
+    },
+    {
+      "test": "task3 1280px: Tab order matches source; no focus trap",
+      "passed": true,
+      "details": {
+        "expected": [
+          "a:#main",
+          "a:index.html",
+          "a:task1.html",
+          "a:task2.html",
+          "a:task3.html",
+          "full-name",
+          "email",
+          "phone",
+          "guests",
+          "date",
+          "meal",
+          "seating-inside",
+          "comments",
+          "terms",
+          "summary:Read the demo terms",
+          "button:Reserve ↗",
+          "a:docs/task3-audit.md"
+        ],
+        "actual": [
+          "a:#main",
+          "a:index.html",
+          "a:task1.html",
+          "a:task2.html",
+          "a:task3.html",
+          "full-name",
+          "email",
+          "phone",
+          "guests",
+          "date",
+          "meal",
+          "seating-inside",
+          "comments",
+          "terms",
+          "summary:Read the demo terms",
+          "button:Reserve ↗",
+          "a:docs/task3-audit.md"
+        ]
+      }
+    },
+    {
+      "test": "task3 1280px: visible keyboard focus on every Tab stop",
+      "passed": true,
+      "details": {
+        "stops": 17,
+        "failures": []
+      }
+    },
+    {
+      "test": "task3 375px: Tab order matches source; no focus trap",
+      "passed": true,
+      "details": {
+        "expected": [
+          "a:#main",
+          "a:index.html",
+          "a:task1.html",
+          "a:task2.html",
+          "a:task3.html",
+          "full-name",
+          "email",
+          "phone",
+          "guests",
+          "date",
+          "meal",
+          "seating-inside",
+          "comments",
+          "terms",
+          "summary:Read the demo terms",
+          "button:Reserve ↗",
+          "a:docs/task3-audit.md"
+        ],
+        "actual": [
+          "a:#main",
+          "a:index.html",
+          "a:task1.html",
+          "a:task2.html",
+          "a:task3.html",
+          "full-name",
+          "email",
+          "phone",
+          "guests",
+          "date",
+          "meal",
+          "seating-inside",
+          "comments",
+          "terms",
+          "summary:Read the demo terms",
+          "button:Reserve ↗",
+          "a:docs/task3-audit.md"
+        ]
+      }
+    },
+    {
+      "test": "task3 375px: visible keyboard focus on every Tab stop",
+      "passed": true,
+      "details": {
+        "stops": 17,
+        "failures": []
+      }
+    },
+    {
+      "test": "task3: empty submission blocked by native validation",
+      "passed": true,
+      "details": {
+        "post_requests": 0,
+        "focused_id": "full-name"
+      }
+    },
+    {
+      "test": "task1: ArrowRight selects only the next journey radio",
+      "passed": true,
+      "details": [
+        "round-trip"
+      ]
+    },
+    {
+      "test": "task1: Space toggles checkbox on and off",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "task1: ArrowRight selects only the next carriage radio",
+      "passed": true,
+      "details": [
+        "coupe"
+      ]
+    },
+    {
+      "test": "task1: Space toggles checkbox on and off",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "task2: ArrowRight selects only the next experience radio",
+      "passed": true,
+      "details": [
+        "experience-intermediate"
+      ]
+    },
+    {
+      "test": "task2: Space toggles checkbox on and off",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "task3: ArrowRight selects only the next seating radio",
+      "passed": true,
+      "details": [
+        "seating-terrace"
+      ]
+    },
+    {
+      "test": "task3: Space toggles checkbox on and off",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "task1: completed example satisfies native constraints",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "task1: keyboard Enter submits POST and reaches local completion page",
+      "passed": true,
+      "details": {
+        "method": "POST",
+        "payload_field_names": [
+          "agreement",
+          "carriage",
+          "departure",
+          "email",
+          "from",
+          "journey",
+          "passengers",
+          "phone",
+          "phone_country_code",
+          "return",
+          "to"
+        ]
+      }
+    },
+    {
+      "test": "task2: completed example satisfies native constraints",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "task2: keyboard Enter submits POST and reaches local completion page",
+      "passed": true,
+      "details": {
+        "method": "POST",
+        "payload_field_names": [
+          "age",
+          "agreement",
+          "arrival_date",
+          "checkin_time",
+          "email",
+          "entry_fee",
+          "experience",
+          "full_name",
+          "github_url",
+          "motivation",
+          "password",
+          "team_size",
+          "track"
+        ]
+      }
+    },
+    {
+      "test": "task3: invalid email rejected",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "task3: guest count 0 rejected",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "task3: guest count 1.5 rejected",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "task3: completed example satisfies native constraints",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "task3: keyboard Enter submits POST and reaches local completion page",
+      "passed": true,
+      "details": {
+        "method": "POST",
+        "payload_field_names": [
+          "comments",
+          "date",
+          "email",
+          "full_name",
+          "guests",
+          "meal",
+          "phone",
+          "seating",
+          "terms"
+        ]
+      }
+    },
+    {
+      "test": "task3: POST includes all nine field names and exactly one seating value",
+      "passed": true,
+      "details": {
+        "names": [
+          "comments",
+          "date",
+          "email",
+          "full_name",
+          "guests",
+          "meal",
+          "phone",
+          "seating",
+          "terms"
+        ],
+        "seating": [
+          "terrace"
+        ]
+      }
+    }
+  ]
+}
